@@ -56,7 +56,7 @@
                             </div>
                             <div class="panel-body">
                                 <h4></h4>
-                                <p>Print data kolam berdasarkan Bulan dan Kecamatan</p>
+                                <p>Rincian data kolam berdasarkan Bulan dan Kecamatan</p>
                                 <br>
                                 <div class="col-md-6">
                                     <select class="form-control" name="bulan">
@@ -100,8 +100,7 @@
                                 <br>
                                 <br>
                                 <div class="text-center">
-                                    {{-- <a href="{{URL::to('/kolam/cetak_kecamatan')}}" target="_blank" class="btn btn-primary"><span class="lnr lnr-download"> </span>Unduh Data</a> --}}
-                                    <button class="btn btn-primary" type="submit"><span class="lnr lnr-download"> </span>Unduh Data</button>
+                                    <button class="btn btn-primary" type="submit"><span class="lnr lnr-download"> </span>Unduh Data PDF</button>
                                     <a href="#" class="btn btn-success"><span class="lnr lnr-download"> </span>Export Excel</a>
                     </div>
                 </div>
@@ -114,15 +113,10 @@
             <div class="panel">
                 <div class="panel-heading">
                     <h3 class="panel-title">Cetak Data Tabel</h3>
-                    {{-- @if ($message = Session::get('warning'))
-                        <div class="alert alert-danger alert-dismissible" role="alert">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <i class="fa fa-check-circle"></i> Data Tidak Ada!</div>
-                    @endif --}}
                 </div>
                 <div class="panel-body">
                     <h4></h4>
-                    <p>Print data kolam berdasarkan Bulan</p>
+                    <p>Rekap data kolam per Bulan</p>
                     <br>
                     <div class="col-md-12">
                         <select class="form-control" name="bulan">
@@ -144,7 +138,6 @@
                     <br>
                     <br>
                     <div class="text-center">
-                        {{-- <a href="#" class="btn btn-primary"><span class="lnr lnr-download"> </span>Unduh Data</a> --}}
                         <button class="btn btn-primary" type="submit"><span class="lnr lnr-download"> </span> Unduh Data</button>
                         <a href="#" class="btn btn-success"><span class="lnr lnr-download"> </span>Export Excel</a>
                     </div>

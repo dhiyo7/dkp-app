@@ -31,10 +31,34 @@
                     <td style="text-align: center;" colspan="2">Nila</td>
                     <td style="text-align: center;" colspan="2">Kaper Mas</td>
                     <td style="text-align: center;" colspan="2">Nilem</td>
-                    <td style="text-align: center;" colspan="2">Gurame</td>
+                    <td style="text-align: center;" colspan="2">Gurameh</td>
+                    <td style="text-align: center;" colspan="2">Tawes</td>
+                    <td style="text-align: center;" colspan="2">Mujair</td>
+                    <td style="text-align: center;" colspan="2">Bawal</td>
+                    <td style="text-align: center;" colspan="2">Belut</td>
+                    <td style="text-align: center;" colspan="2">Udang Galah</td>
+                    <td style="text-align: center;" colspan="2">Tabakan</td>
+                    <td style="text-align: center;" colspan="2">Patin</td>
+                    <td style="text-align: center;" colspan="2">Jumlah</td>
                 </tr>
                 <tr>
-                    <td style="text">Produski (Kg)</td>
+                    <td>Produski (Kg)</td>
+                    <td>Nilai (Rp)</td>
+                    <td>Produski (Kg)</td>
+                    <td>Nilai (Rp)</td>
+                    <td>Produski (Kg)</td>
+                    <td>Nilai (Rp)</td>
+                    <td>Produski (Kg)</td>
+                    <td>Nilai (Rp)</td>
+                    <td>Produski (Kg)</td>
+                    <td>Nilai (Rp)</td>
+                    <td>Produski (Kg)</td>
+                    <td>Nilai (Rp)</td>
+                    <td>Produski (Kg)</td>
+                    <td>Nilai (Rp)</td>
+                    <td>Produski (Kg)</td>
+                    <td>Nilai (Rp)</td>
+                    <td>Produski (Kg)</td>
                     <td>Nilai (Rp)</td>
                     <td>Produski (Kg)</td>
                     <td>Nilai (Rp)</td>
@@ -62,6 +86,23 @@
                     <td>{{$dat->nil_nilem}}</td>
                     <td>{{$dat->pro_gurame}}</td>
                     <td>{{$dat->nil_gurame}}</td>
+                    <td>{{$dat->pro_lele}}</td>
+                    <td>{{$dat->nil_lele}}</td>
+                    <td>{{$dat->pro_nila}}</td>
+                    <td>{{$dat->nil_nila}}</td>
+                    <td>{{$dat->pro_kaper}}</td>
+                    <td>{{$dat->nil_kaper}}</td>
+                    <td>{{$dat->pro_nilem}}</td>
+                    <td>{{$dat->nil_nilem}}</td>
+                    <td>{{$dat->pro_gurame}}</td>
+                    <td>{{$dat->nil_gurame}}</td>
+                    <td>{{$dat->pro_kaper}}</td>
+                    <td>{{$dat->nil_kaper}}</td>
+                    <td>{{$dat->pro_nilem}}</td>
+                    <td>{{$dat->nil_nilem}}</td>
+                    <td>{{$dat->pro_gurame}}</td>
+                    <td>{{$dat->nil_gurame}}</td>
+                </tr>
                 </tr>
                 @endforeach
             </tbody>

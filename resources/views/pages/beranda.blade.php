@@ -11,7 +11,7 @@
             </div>
             <div class="panel-body">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="metric">
                             <span class="icon"><i class="fa fa-list"></i></span>
                             <p>
@@ -20,7 +20,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="metric">
                             <span class="icon"><i class="fa fa-list"></i></span>
                             <p>
@@ -29,21 +29,12 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="metric">
                             <span class="icon"><i class="fa fa-list"></i></span>
                             <p>
                                 <span class="number">{{$upr}}</span>
                                 <span class="title">Produksi UPR</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="metric">
-                            <span class="icon"><i class="fa fa-list"></i></span>
-                            <p>
-                                <span class="number">{{$benih}}</span>
-                                <span class="title">Data Produksi Benih</span>
                             </p>
                         </div>
                     </div>

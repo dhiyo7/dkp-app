@@ -38,7 +38,7 @@
                                 @foreach ($lahans as $lahan)
 
 								<tr>
-									<td>{$no++{}}</td>
+									<td>{{$no++}}</td>
 									<td>{{$lahan->desa}}</td>
 									<td>{{$lahan->kecamatan}}</td>
 									<td>{{$lahan->bulan}}</td>
@@ -71,7 +71,7 @@
 						</div>
 						<div class="panel-body">
 							<h4></h4>
-							<p>Print data kolam berdasarkan Bulan</p>
+							<p>Rekapan data Luas Lahan & RTP berdasarkan Bulan</p>
 							<br>
 								<div class="col-md-12">
 									<select class="form-control" name="bulan">
@@ -93,9 +93,7 @@
 								<br>
 									<br>
 										<div class="text-center">
-											<a href="#" class="btn btn-primary">
-												<span class="lnr lnr-printer"></span>Print Data
-											</a>
+                                            <button class="btn btn-primary" type="submit"><span class="lnr lnr-download"> </span> Unduh Data</button>
 										</div>
 									</div>
 								</div>

@@ -1,7 +1,7 @@
 @extends('master') @section('content')
 <div class="main-content">
     <div class="container-fluid">
-        <h3 class="page-title">Data Kolam</h3>
+        <h3 class="page-title">Data UPR</h3>
         @if ($message = Session::get('danger'))
         <div class="alert alert-danger alert-dismissible" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -58,7 +58,7 @@
                             </div>
                             <div class="panel-body">
                                 <h4></h4>
-                                <p>Print data kolam berdasarkan Bulan dan Kecamatan</p>
+                                <p>Rincian data UPR berdasarkan Bulan dan Kecamatan</p>
                                 <br>
                                 <div class="col-md-6">
                                     <select class="form-control" name="bulan">
@@ -119,7 +119,7 @@
                 </div>
                 <div class="panel-body">
                     <h4></h4>
-                    <p>Print data kolam berdasarkan Bulan</p>
+                    <p>Rekapan data UPR berdasarkan Bulan</p>
                     <br>
                     <div class="col-md-12">
                         <select class="form-control" name="bulan">

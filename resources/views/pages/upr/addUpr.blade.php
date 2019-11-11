@@ -84,7 +84,6 @@
                         <br>
                     </div>
                     <div class="text-center">
-                        {{-- <a href="" class="btn btn-success">Simpan Data</a> --}}
                         <button type="submit" class="btn btn-success">Simpan Data</button>
                     </div><br>
                 </div>
