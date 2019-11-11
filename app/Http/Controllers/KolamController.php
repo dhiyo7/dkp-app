@@ -49,11 +49,19 @@ class KolamController extends Controller
         $bulan = $request->bulan;
         $kecamatan = $request->kecamatan;
 
+        $this->validate($request,[
+            $bulan => 'exists:bulan',
+            $kecamatan => 'exists:kecamatan'
+        ]);
+
+        
+
         $data = DB::table('kolams')
                     ->where([
                     ['bulan', '=', $bulan],
                     ['kecamatan', '=', $kecamatan]
                 ])->get();
+
 
         $pdf = PDF::loadview('pages.kolam.kolamKecamatan', compact('data'))
                             ->setPaper('a4', 'landscape');

@@ -16,10 +16,10 @@
     <h2 class="text-center">Dinas Perikanan</h2>
     <p class="text-center">Kabupaten Brebes</p>
     <p class="text-sm-left">Data Produksi Kolam 2019</p>
-    <p class="text-sm-left">Nama Penyuluh : {{$data[0]->penyuluh}}</p>
-    <p class="text-sm-left">Kecamatan : {{$data[0]->kecamatan}}</p>
+    {{-- <p class="text-sm-left">Nama Penyuluh : {{$data->penyuluh}}</p>
+    <p class="text-sm-left">Kecamatan : {{$data->kecamatan}}</p>
     {{-- <p class="text-sm-left">Wilayah Kerja : {{$data[0]->wilayah}}</p> --}}
-    <p class="text-sm-left">Bulan : {{$data[0]->bulan}}</p>
+    {{-- <p class="text-sm-left">Bulan : {{$data->bulan}}</p> --}}
     <div class="table-responsive">
         <table class="table table-bordered">
             <thead class="thead-dark">
