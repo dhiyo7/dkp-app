@@ -20,7 +20,7 @@ class CreateProduksiPengolahansTable extends Migration
             $table->string('bulan');
             $table->string('penyuluh');
             $table->string('alamat');
-            $table->int('jenis_olahan');
+            $table->integer('jenis_olahan');
             $table->string('produk_olahan');
             $table->integer('produksi')->default(0);
             $table->integer('nil_produksi')->default(0);
