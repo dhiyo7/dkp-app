@@ -10,7 +10,7 @@
             <div class="col-md-12">
                 <div class="panel">
                     <div class="panel-heading">
-                        <a href="{{route('tambah.pengolahan')}}" class="btn btn-success">Tambah Data</a>
+                        <a href="{{route('tambah.prolah')}}" class="btn btn-success">Tambah Data</a>
                     </div>
                     <div class="panel-body">
                         <table class="table table-bordered display nowrap" id="example" style="width:100%">
@@ -26,7 +26,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                {{-- @php($no = 1) @foreach ($pengolahans as $pengolahan)
+                                @php($no = 1) @foreach ($pengolahans as $pengolahan)
                                 <tr>
                                     <td>{{$no++}}</td>
                                     <td>{{$pengolahan->name}}</td>
@@ -35,12 +35,12 @@
                                     <td>{{$pengolahan->bulan}}</td>
                                     <td>{{$pengolahan->penyuluh}}</td>
                                     <td>
-                                        <form action="{{route('pengolahan.delete', $pengolahan->id)}}" method="POST">
+                                        <form action="{{route('prolah.delete', $pengolahan->id)}}" method="POST">
                                             {{ csrf_field() }} {{ method_field('DELETE') }}
                                             <button class="btn btn-danger" type="submit"><span class="lnr lnr-trash"></<span></button>
                                                     </form>
                                         </td>
-                                    </tr> --}}
+                                    </tr>
                                 @endforeach
                             </tbody>
                         </table>
@@ -49,7 +49,7 @@
             </div>
         </div>
 
-        <form class="row" action="{{route('pengolahan.pdf.kecamatan')}}" method="GET">
+        <form class="row" action="{{route('prolah.pdf.kecamatan')}}" method="GET">
                 <div class="col-md-12">
                         <div class="panel">
                             <div class="panel-heading">
@@ -109,7 +109,7 @@
         </div>
         </form>
 
-        <form class="row" action="{{route('pengolahan.pdf.bulan')}}" method="GET">
+        <form class="row" action="{{route('prolah.pdf.bulan')}}" method="GET">
             <div class="col-md-12">
                 <div class="panel">
                     <div class="panel-heading">

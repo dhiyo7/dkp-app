@@ -9,8 +9,7 @@
                         <ul class="nav">
                             <li><a href="{{route('kolam')}}" class="">Data Kolam</a></li>
                             <li><a href="{{route('tambak')}}" class="">Data Tambak</a></li>
-                            <li><a href="{{route('pengolahan')}}" class="">Data Produksi Pengolahan</a></li>
-                            {{-- <li><a href="{{route('benih')}}" class="">Data Produksi Benih</a></li> --}}
+                            <li><a href="{{route('prolah')}}" class="">Data Produksi Pengolahan</a></li>
                             <li><a href="{{route('upr')}}" class="">Data UPR</a></li>
                             <li><a href="{{route('lahan')}}" class="">Data Luas Lahan RTP</a></li>
                             <li><a href="{{route('pendataan')}}" class="">Pendataan Pelaku Usaha</a></li>

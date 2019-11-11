@@ -6,7 +6,7 @@
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <i class="fa fa-check-circle"></i> Data Berhasil Disimpan!</div>
         @endif
-        <form class="row" action="{{route('tambah.pengolahan.post')}}" method="POST">
+        <form class="row" action="{{route('tambah.prolah.post')}}" method="POST">
             {{ csrf_field() }}
             <div class="col-md-12">
                 <div class="panel">
