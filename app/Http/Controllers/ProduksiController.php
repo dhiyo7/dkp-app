@@ -18,10 +18,10 @@ class ProduksiController extends Controller
 
     public function index()
     {
-        // $pengolahans = DB::table('produksi_pengolahans')
-        //                 ->join('jenis_olahans', 'produksi_pengolahans.jenis_olahan', '=', 'jenis_olahans.id')
-        //                 ->select('produksi_pengolahans.*', 'jenis_olahans.jenis_olahan as jenis')
-        //                 ->get();
+        $pengolahans = DB::table('produksi_pengolahans')
+                        ->join('jenis_olahans', 'produksi_pengolahans.jenis_olahan', '=', 'jenis_olahans.id')
+                        ->select('produksi_pengolahans.*', 'jenis_olahans.jenis_olahan as jenis')
+                        ->get();
         return view('pages.pengolahan.index');
     }
 
