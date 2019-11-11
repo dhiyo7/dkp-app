@@ -29,6 +29,20 @@ class CreateKolamsTable extends Migration
             $table->integer('nil_nilem')->default(0)->nullable();
             $table->integer('pro_gurame')->default(0)->nullable();
             $table->integer('nil_gurame')->default(0)->nullable();
+            $table->integer('pro_tawes')->default(0)->nullable();
+            $table->integer('nil_tawes')->default(0)->nullable();
+            $table->integer('pro_mujair')->default(0)->nullable();
+            $table->integer('nil_mujair')->default(0)->nullable();
+            $table->integer('pro_bawal')->default(0)->nullable();
+            $table->integer('nil_bawal')->default(0)->nullable();
+            $table->integer('pro_belut')->default(0)->nullable();
+            $table->integer('nil_belut')->default(0)->nullable();
+            $table->integer('pro_udang_galah')->default(0)->nullable();
+            $table->integer('nil_udang_galah')->default(0)->nullable();
+            $table->integer('pro_tambakan')->default(0)->nullable();
+            $table->integer('nil_tambakan')->default(0)->nullable();
+            $table->integer('pro_patin')->default(0)->nullable();
+            $table->integer('nil_patin')->default(0)->nullable();
             $table->timestamps();
         });
     }
