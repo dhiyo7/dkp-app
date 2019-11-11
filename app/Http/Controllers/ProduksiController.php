@@ -9,7 +9,7 @@ use App\JenisOlahan;
 use DB;
 use PDF;
 
-class ProduksiPengolahanController extends Controller
+class ProduksiController extends Controller
 {
     public function __construct()
     {

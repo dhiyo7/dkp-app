@@ -40,12 +40,12 @@ Route::prefix('tambak')->group(function(){
 });
 
 Route::prefix('pengolahan')->group(function(){
-    Route::get('/', 'ProduksiPengolahanController@index')->name('pengolahan');
-    Route::get('/add', 'ProduksiPengolahanController@create')->name('tambah.pengolahan');
-    Route::post('/add', 'ProduksiPengolahanController@store')->name('tambah.pengolahan.post');
-    Route::delete('/{id}/delete', 'ProduksiPengolahanController@destroy')->name('pengolahan.delete');
-    Route::get('/cetak_kecamatan', 'ProduksiPengolahanController@cetak_kecamatan')->name('pengolahan.pdf.kecamatan');
-    Route::get('/cetak_bulan', 'ProduksiPengolahanController@cetak_bulan')->name('pengolahan.pdf.bulan');
+    Route::get('/', 'ProduksiController@index')->name('pengolahan');
+    Route::get('/add', 'ProduksiController@create')->name('tambah.pengolahan');
+    Route::post('/add', 'ProduksiController@store')->name('tambah.pengolahan.post');
+    Route::delete('/{id}/delete', 'ProduksiController@destroy')->name('pengolahan.delete');
+    Route::get('/cetak_kecamatan', 'ProduksiController@cetak_kecamatan')->name('pengolahan.pdf.kecamatan');
+    Route::get('/cetak_bulan', 'ProduksiController@cetak_bulan')->name('pengolahan.pdf.bulan');
 });
 
 Route::prefix('benih')->group(function(){
