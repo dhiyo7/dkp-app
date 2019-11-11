@@ -26,7 +26,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @php($no = 1) @foreach ($pengolahans as $pengolahan)
+                                {{-- @php($no = 1) @foreach ($pengolahans as $pengolahan)
                                 <tr>
                                     <td>{{$no++}}</td>
                                     <td>{{$pengolahan->name}}</td>
@@ -40,7 +40,7 @@
                                             <button class="btn btn-danger" type="submit"><span class="lnr lnr-trash"></<span></button>
                                                     </form>
                                         </td>
-                                    </tr>
+                                    </tr> --}}
                                 @endforeach
                             </tbody>
                         </table>
