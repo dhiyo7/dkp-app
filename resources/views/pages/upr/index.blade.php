@@ -11,7 +11,7 @@
             <div class="col-md-12">
                 <div class="panel">
                     <div class="panel-heading">
-                        <a href="{{route('tambah.upr')}}" class="btn btn-success">Tambah Data Kolam</a>
+                        <a href="{{route('tambah.upr')}}" class="btn btn-success">Tambah Data UPR</a>
                     </div>
                     <div class="panel-body">
                         <table class="table table-bordered display nowrap" id="example" style="width:100%">

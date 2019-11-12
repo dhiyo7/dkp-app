@@ -19,13 +19,12 @@ class HomeController extends Controller
         $thisTime = Carbon::now();
 
         $kolam = DB::table('kolams')->count();
-        $benih = DB::table('benihs')->count();
         $lahan = DB::table('luas_lahans')->count();
         $pengolahan = DB::table('produksi_pengolahans')->count();
         $tambak = DB::table('produksi_tambaks')->count();
         $upr = DB::table('uprs')->count();
         // $kolam = DB::table('kolams')->count();
 
-        return view('pages.beranda', compact('kolam','benih','tambak','lahan','pengolahan','upr','thisTime'));
+        return view('pages.beranda', compact('kolam','tambak','lahan','pengolahan','upr','thisTime'));
     }
 }

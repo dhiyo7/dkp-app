@@ -48,14 +48,14 @@ Route::prefix('prolah')->group(function(){
     Route::get('/cetak_bulan', 'ProduksiController@cetak_bulan')->name('prolah.pdf.bulan');
 });
 
-Route::prefix('benih')->group(function(){
-    Route::get('/', 'BenihController@index')->name('benih');
-    Route::get('/add', 'BenihController@create')->name('tambah.benih');
-    Route::post('/add', 'BenihController@store')->name('tambah.benih.post');
-    Route::delete('/{id}/delete', 'BenihController@destroy')->name('benih.delete');
-    Route::get('/cetak_kecamatan', 'BenihController@cetak_kecamatan')->name('benih.pdf.kecamatan');
-    Route::get('/cetak_bulan', 'BenihController@cetak_bulan')->name('benih.pdf.bulan');
-});
+// Route::prefix('benih')->group(function(){
+//     Route::get('/', 'BenihController@index')->name('benih');
+//     Route::get('/add', 'BenihController@create')->name('tambah.benih');
+//     Route::post('/add', 'BenihController@store')->name('tambah.benih.post');
+//     Route::delete('/{id}/delete', 'BenihController@destroy')->name('benih.delete');
+//     Route::get('/cetak_kecamatan', 'BenihController@cetak_kecamatan')->name('benih.pdf.kecamatan');
+//     Route::get('/cetak_bulan', 'BenihController@cetak_bulan')->name('benih.pdf.bulan');
+// });
 
 Route::prefix('upr')->group(function(){
     Route::get('/', 'UprController@index')->name('upr');

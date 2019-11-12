@@ -66,23 +66,52 @@
                             <br>
                             <input type="number" name="pro_nila" class="form-control" placeholder="Masukkan Produksi Nila">
                             <br>
-
-                        </div>
-                        <div class="col-md-6">
                             <input type="number" name="nil_nila" class="form-control" placeholder="Masukkan Nilai Produksi Nila">
                             <br>
                             <input type="number" name="pro_kaper" class="form-control" placeholder="Masukkan Produksi Kaper">
                             <br>
                             <input type="number" name="nil_kaper" class="form-control" placeholder="Masukkan Nilai Produksi Kaper">
                             <br>
-                            <input type="number" name="pro_nilem" class="form-control" placeholder="Masukkan Produksi Nilam">
+                            <input type="number" name="pro_nilem" class="form-control" placeholder="Masukkan Produksi Nilem">
                             <br>
-                            <input type="number" name="nil_nilem" class="form-control" placeholder="Masukkan Nilai Produksi Nilam">
+                            <input type="number" name="nil_nilem" class="form-control" placeholder="Masukkan Nilai Produksi Nilem">
                             <br>
-                            <input type="number" name="pro_gurame" class="form-control" placeholder="Masukkan Produksi Gurame">
+                            <input type="number" name="pro_gurame" class="form-control" placeholder="Masukkan Produksi Gurameh">
                             <br>
-                            <input type="number" name="nil_gurame" class="form-control" placeholder="Masukkan Nilai Produksi Gurame">
+                            <input type="number" name="nil_gurame" class="form-control" placeholder="Masukkan Nilai Produksi Gurameh">
                             <br>
+
+                        </div>
+                        <div class="col-md-6">
+                            <input type="number" name="pro_tawes" class="form-control" placeholder="Masukkan Produksi Tawes">
+                            <br>
+                            <input type="number" name="nil_tawes" class="form-control" placeholder="Masukkan Nilai Produksi Tawes">
+                            <br>
+                            <input type="number" name="pro_mujair" class="form-control" placeholder="Masukkan Produksi Mujair">
+                            <br>
+                            <input type="number" name="nil_mujair" class="form-control" placeholder="Masukkan Nilai Produksi Mujair">
+                            <br>
+                            <input type="number" name="pro_bawal" class="form-control" placeholder="Masukkan Produksi Bawal">
+                            <br>
+                            <input type="number" name="nil_bawal" class="form-control" placeholder="Masukkan Nilai Produksi Bawal">
+                            <br>
+                            <input type="number" name="pro_belut" class="form-control" placeholder="Masukkan Produksi Belut">
+                            <br>
+                            <input type="number" name="nil_belut" class="form-control" placeholder="Masukkan Nilai Produksi Belut">
+                            <br>
+                            <input type="number" name="pro_udang_galah" class="form-control" placeholder="Masukkan Produksi Udang Galah">
+                            <br>
+                            <input type="number" name="nil_udang_galah" class="form-control" placeholder="Masukkan Nilai Produksi Udang Galah">
+                            <br>
+                            <input type="number" name="pro_tambakan" class="form-control" placeholder="Masukkan Produksi Tambakan">
+                            <br>
+                            <input type="number" name="nil_tambakan" class="form-control" placeholder="Masukkan Nilai Produksi Tambakan">
+                            <br>
+                            <input type="number" name="pro_patin" class="form-control" placeholder="Masukkan Produksi Patin">
+                            <br>
+                            <input type="number" name="nil_patin" class="form-control" placeholder="Masukkan Nilai Produksi Patin">
+                            <br>
+
                         </div>
                         <br>
                         <br>

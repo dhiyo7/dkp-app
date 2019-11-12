@@ -14,7 +14,29 @@ class CreatePelakuUsahasTable extends Migration
     public function up()
     {
         Schema::create('pelaku_usahas', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
+            $table->string('nama_pelaku');
+            $table->string('kategori');
+            $table->string('kecamatan');
+            $table->string('bulan');
+            $table->string('penyuluh');
+            $table->string('alamat');
+            $table->string('tahun_berdiri');
+            $table->string('legalitas');
+            $table->string('no_hp');
+            $table->string('jml_kelompok');
+            $table->string('kelas_kelompok');
+            $table->integer('jml_produksi');
+            $table->integer('harga_produk');
+            $table->integer('nilai_produksi');
+            $table->integer('jml_pekerja');
+            $table->string('status_pekerja');
+            $table->integer('pendapatan_per_bulan');
+            $table->integer('pengeluaran_per_bulan');
+            $table->string('nama_bantuan');
+            $table->string('sumber_bantuan');
+            $table->string('tahun_bantuan');
+            $table->string('keterangan');
             $table->timestamps();
         });
     }

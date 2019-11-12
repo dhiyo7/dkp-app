@@ -148,6 +148,47 @@
             </div>
         </div>
     </form>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel">
+                <div class="panel-heading">
+                    <a href="{{route('tambah.pendataan')}}" class="btn btn-success">Tambah Data Kolam</a>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-bordered display nowrap" id="example" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>Desa</th>
+                                <th>Kecamatan</th>
+                                <th>Bulan</th>
+                                <th>Penyuluh</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{-- @php($no = 1) @foreach ($ as $kolam)
+                            <tr>
+                                <td>{{$no++}}</td>
+                                <td>{{$kolam->desa}}</td>
+                                <td>{{$kolam->kecamatan}}</td>
+                                <td>{{$kolam->bulan}}</td>
+                                <td>{{$kolam->penyuluh}}</td>
+                                <td>
+                                    <form action="{{route('kolam.delete', $kolam->id)}}" method="POST">
+                                        {{ csrf_field() }} {{ method_field('DELETE') }}
+                                        <button class="btn btn-danger" type="submit"><span class="lnr lnr-trash"></<span></button>
+                                    </form>
+                                </td>
+                            </tr>
+                            @endforeach --}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 </div>
 @endsection
