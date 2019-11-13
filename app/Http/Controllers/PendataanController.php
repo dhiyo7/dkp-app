@@ -19,39 +19,4 @@ class PendataanController extends Controller
     }
 
 
-    public function create()
-    {
-        $penyuluh = Penyuluh::all();
-        return view('pages.pendataan.addPud', compact('penyuluh'));
-    }
-
-
-    public function store(Request $request)
-    {
-        //
-    }
-
-
-    public function show($id)
-    {
-        //
-    }
-
-
-    public function edit($id)
-    {
-        //
-    }
-
-
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-
-    public function destroy($id)
-    {
-        //
-    }
 }

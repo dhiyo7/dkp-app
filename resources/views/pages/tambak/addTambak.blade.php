@@ -59,25 +59,35 @@
                                         </select><br>
                                         <input name="pro_rumput_laut" type="number" class="form-control" placeholder="Masukkan Produksi Rumput Laut"><br>
                                         <input name="nil_rumput_laut" type="number" class="form-control" placeholder="Masukkan Nilai Produksi Rumput Laut"><br>
-                                        <input name="pro_udang_windu" type="number" class="form-control" placeholder="Masukkan Produksi Udang Windu"><br>
-                                        <input name="nil_udang_windu" type="number" class="form-control" placeholder="Masukkan Nilai Produksi Udang Windu"><br>
                                         <input name="pro_udang_vaname_sederhana" type="number" class="form-control" placeholder="Masukkan Produksi Udang Vaname Sederhana"><br>
                                         <input name="nil_udang_vaname_sederhana" type="number" class="form-control" placeholder="Masukkan Nilai Produksi Udang Vaname Sederhana"><br>
                                         <input name="pro_udang_vaname_semi" type="number" class="form-control" placeholder="Masukkan Produksi Udang Vaname Semi"><br>
+                                        <input name="nil_udang_vaname_semi" type="number" class="form-control" placeholder="Masukkan Nilai Produksi Udang Vaname Semi"><br>
+                                        <input name="pro_udang_vaname_intensif" type="number" class="form-control" placeholder="Masukkan Produksi Udang Vaname Intensif"><br>
+                                        <input name="nil_udang_vaname_intensif" type="number" class="form-control" placeholder="Masukkan Nilai Produksi Udang Vaname Intensif"><br>
+                                        <input name="pro_udang_windu" type="number" class="form-control" placeholder="Masukkan Produksi Udang Windu"><br>
+                                        <input name="nil_udang_windu" type="number" class="form-control" placeholder="Masukkan Nilai Produksi Udang Windu"><br>
+                                        <input name="pro_bandeng" type="number" class="form-control" placeholder="Masukkan Produksi Bandeng"><br>
+                                        <input name="nil_bandeng" type="number" class="form-control" placeholder="Masukkan Nilai Produksi Bandeng"><br>
 
                                 </div>
                                 <div class="col-md-6">
-                                        <input name="nil_udang_vaname_semi" type="number" class="form-control" placeholder="Masukkan Nilai Udang Vaname Semi"><br>
-                                        <input name="pro_udang_vaname_intensif" type="number" class="form-control" placeholder="Masukkan  Produksi Udang Vaname Intensif"><br>
-                                        <input name="nil_udang_vaname_intensif" type="number" class="form-control" placeholder="Masukkan Nilai Produksi Udang Vaname Intensif"><br>
+                                        <input name="pro_mujair" type="number" class="form-control" placeholder="Masukkan  Produksi Mujair"><br>
+                                        <input name="nil_mujair" type="number" class="form-control" placeholder="Masukkan Nilai Produksi Mujair"><br>
+                                        <input name="pro_kakap" type="number" class="form-control" placeholder="Masukkan Produksi Kakap"><br>
+                                        <input name="nil_kakap" type="number" class="form-control" placeholder="Masukkan Nilai Produksi Kakap"><br>
+                                        <input name="pro_kepiting" type="number" class="form-control" placeholder="Masukkan Produksi Kepiting"><br>
+                                        <input name="nil_kepiting" type="number" class="form-control" placeholder="Masukkan Nilai Produksi Kepiting"><br>
+                                        <input name="pro_kerang_darah" type="number" class="form-control" placeholder="Masukkan Produksi Kerang Darah"><br>
+                                        <input name="nil_kerang_darah" type="number" class="form-control" placeholder="Masukkan Nilai Produksi Kerang Darah"><br>
                                         <input name="pro_udang_putih" type="number" class="form-control" placeholder="Masukkan Produksi Udang Putih"><br>
                                         <input name="nil_udang_putih" type="number" class="form-control" placeholder="Masukkan Nilai Produksi Udang Putih"><br>
-                                        <input name="pro_udang_lokal" type="number" class="form-control" placeholder="Masukkan Produksi Udang Lokal"><br>
-                                        <input name="nil_udang_lokal" type="number" class="form-control" placeholder="Masukkan Nilai Produksi Udang Lokal"><br>
-                                        <input name="pro_bandeng" type="number" class="form-control" placeholder="Masukkan Produksi Bandeng"><br>
-                                        <input name="nil_bandeng" type="number" class="form-control" placeholder="Masukkan Nilai Produksi Bandeng"><br>
-                                        <input name="pro_lele" type="number" class="form-control" placeholder="Masukkan Produksi Lele"><br>
-                                        <input name="nil_lele" type="number" class="form-control" placeholder="Masukkan Nilai Produksi Lele"><br>
+                                        <input name="pro_nila" type="number" class="form-control" placeholder="Masukkan Produksi Nila"><br>
+                                        <input name="nil_nila" type="number" class="form-control" placeholder="Masukkan Nilai Produksi Nila"><br>
+                                        <input name="pro_blanak" type="number" class="form-control" placeholder="Masukkan Produksi Blanak"><br>
+                                        <input name="nil_blanak" type="number" class="form-control" placeholder="Masukkan Nilai Produksi Blanak"><br>
+                                        <input name="nil_koi" type="number" class="form-control" placeholder="Masukkan Produksi Koi"><br>
+                                        <input name="nil_koi" type="number" class="form-control" placeholder="Masukkan Nilai Produksi Koi"><br>
                                 </div>
                                 <br>
                                 <br>

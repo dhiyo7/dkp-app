@@ -16,8 +16,9 @@ class CreatePengurusPendataansTable extends Migration
         Schema::create('pengurus_pendataans', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('id_pelaku');
-            $table->string('jabatan');
-            $table->string('nama_anggota');
+            $table->string('ketua');
+            $table->string('sekretaris');
+            $table->string('bendahara');
             $table->timestamps();
         });
     }

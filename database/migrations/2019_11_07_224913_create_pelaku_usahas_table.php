@@ -15,8 +15,9 @@ class CreatePelakuUsahasTable extends Migration
     {
         Schema::create('pelaku_usahas', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nama_pelaku');
+            $table->integer('jenis');
             $table->string('kategori');
+            $table->string('nama_pelaku');
             $table->string('kecamatan');
             $table->string('bulan');
             $table->string('penyuluh');

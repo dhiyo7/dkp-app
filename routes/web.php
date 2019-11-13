@@ -48,15 +48,6 @@ Route::prefix('prolah')->group(function(){
     Route::get('/cetak_bulan', 'ProduksiController@cetak_bulan')->name('prolah.pdf.bulan');
 });
 
-// Route::prefix('benih')->group(function(){
-//     Route::get('/', 'BenihController@index')->name('benih');
-//     Route::get('/add', 'BenihController@create')->name('tambah.benih');
-//     Route::post('/add', 'BenihController@store')->name('tambah.benih.post');
-//     Route::delete('/{id}/delete', 'BenihController@destroy')->name('benih.delete');
-//     Route::get('/cetak_kecamatan', 'BenihController@cetak_kecamatan')->name('benih.pdf.kecamatan');
-//     Route::get('/cetak_bulan', 'BenihController@cetak_bulan')->name('benih.pdf.bulan');
-// });
-
 Route::prefix('upr')->group(function(){
     Route::get('/', 'UprController@index')->name('upr');
     Route::get('/add', 'UprController@create')->name('tambah.upr');
@@ -67,7 +58,16 @@ Route::prefix('upr')->group(function(){
 
 Route::prefix('pendataan')->group(function(){
     Route::get('/', 'PendataanController@index')->name('pendataan');
-    Route::get('/add', 'PendataanController@create')->name('tambah.pendataan');
+    Route::get('/kelompok', 'PendataanKelompokController@index')->name('pendataan.kelompok');
+    Route::get('/kelompok/add', 'PendataanKelompokController@create')->name('tambah.pendataan.kelompok');
+    Route::post('/kelompok/add', 'PendataanKelompokController@store')->name('tambah.pendataan.kelompok.post');
+
+
+    Route::get('/perorangan', 'PendataanPeroranganController@index')->name('pendataan.perorangan');
+    Route::get('/perorangan/add', 'PendataanPeroranganController@create')->name('tambah.pendataan.perorangan');
+    Route::post('/perorangan/add', 'PendataanPeroranganController@store')->name('tambah.pendataan.perorangan.post');
+
+
 });
 
 Route::prefix('olahan')->group(function(){
