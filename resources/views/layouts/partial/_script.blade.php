@@ -25,7 +25,7 @@
 
             ++i;
 
-            $("#dynamicKomoditas").append('<tr><td><input type="text" name="addmore['+i+'][jenis_komoditas]" placeholder="Masukkan Jenis Komoditas" class="form-control" /></td><td><button type="button" class="btn btn-danger remove-tr">Remove</button></td></tr>');
+            $("#dynamicKomoditas").append('<tr><td><input type="text" name="komoditas['+i+'][jenis_komoditas]" placeholder="Masukkan Jenis Komoditas" class="form-control" /></td><td><button type="button" class="btn btn-danger remove-tr">Remove</button></td></tr>');
         });
 
         $(document).on('click', '.remove-tr', function(){
@@ -42,7 +42,7 @@
 
             ++i;
 
-            $("#dynamicAsset").append('<tr><td><input type="text" name="addmore['+i+'][sarana]" placeholder="Masukkan Jenis Sarana" class="form-control" /></td><td><input type="text" name="addmore['+i+'][jml_asset]" placeholder="Masukkan Jumlah Asset" class="form-control" /></td><td><input type="text" name="addmore['+i+'][status]" placeholder="Masukkan Status" class="form-control" /></td><td><input type="text" name="addmore['+i+'][nil_asset]" placeholder="Masukkan Nilai" class="form-control" /></td><td><button type="button" class="btn btn-danger remove-tr">Remove</button></td></tr>');
+            $("#dynamicAsset").append('<tr><td><input type="text" name="asset['+i+'][sarana]" placeholder="Masukkan Jenis Sarana" class="form-control" /></td><td><input type="text" name="asset['+i+'][jml_asset]" placeholder="Masukkan Jumlah Asset" class="form-control" /></td><td><input type="text" name="asset['+i+'][status]" placeholder="Masukkan Status" class="form-control" /></td><td><input type="text" name="asset['+i+'][nil_asset]" placeholder="Masukkan Nilai" class="form-control" /></td><td><button type="button" class="btn btn-danger remove-tr">Remove</button></td></tr>');
         });
 
         $(document).on('click', '.remove-tr', function(){
@@ -59,7 +59,7 @@
 
             ++i;
 
-            $("#dynamicProduksi").append('<tr><td><input type="text" name="addmore['+i+'][bahan_baku_utama]" placeholder="Masukkan Bahan Baku Utama dan Tambahan" class="form-control" /></td><td><input type="text" name="addmore['+i+'][nilai_bahan_baku_utama]" placeholder="Masukkan Nilai" class="form-control" /></td><td><button type="button" class="btn btn-danger remove-tr">Remove</button></td></tr>');
+            $("#dynamicProduksi").append('<tr><td><input type="text" name="bahan['+i+'][bahan_baku_utama]" placeholder="Masukkan Bahan Baku Utama dan Tambahan" class="form-control" /></td><td><input type="text" name="bahan['+i+'][nilai_bahan_baku_utama]" placeholder="Masukkan Nilai" class="form-control" /></td><td><button type="button" class="btn btn-danger remove-tr">Remove</button></td></tr>');
         });
 
         $(document).on('click', '.remove-tr', function(){

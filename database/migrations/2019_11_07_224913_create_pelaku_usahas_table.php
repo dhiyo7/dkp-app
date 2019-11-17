@@ -38,6 +38,7 @@ class CreatePelakuUsahasTable extends Migration
             $table->string('sumber_bantuan');
             $table->string('tahun_bantuan');
             $table->string('keterangan');
+            $table->string('pemasaran');
             $table->timestamps();
         });
     }
