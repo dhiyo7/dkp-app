@@ -16,7 +16,7 @@ class CreateKomoditasPelakuUsahasTable extends Migration
         Schema::create('komoditas_pelaku_usahas', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('id_pelaku');
-            $table->string('jenis_komoditas');
+            $table->string('jenis_komoditas')->nullable();
             $table->timestamps();
         });
     }

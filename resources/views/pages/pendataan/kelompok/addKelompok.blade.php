@@ -2,7 +2,8 @@
 <div class="main-content">
     <form class="container-fluid" action="{{route('tambah.pendataan.kelompok.post')}}" method="POST" enctype="multipart/form-data">
         {{ csrf_field() }}
-        <h3 class="page-title">Input Pelaku Usaha (Kelompok)</h3> @if ($message = Session::get('success'))
+        <h3 class="page-title">Input Pelaku Usaha (Kelompok)</h3>
+        @if ($message = Session::get('success'))
         <div class="alert alert-success alert-dismissible" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <i class="fa fa-check-circle"></i> Data Berhasil Disimpan!</div>

@@ -16,10 +16,10 @@ class CreateSumberBahanBakusTable extends Migration
         Schema::create('sumber_bahan_bakus', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('id_pelaku');
-            $table->string('jenis_bahan_baku');
-            $table->string('asal_bahan_baku');
-            $table->integer('jml_bahan_baku');
-            $table->integer('harga_pcs');
+            $table->string('jenis_bahan_baku')->nullable();
+            $table->string('asal_bahan_baku')->nullable();
+            $table->integer('jml_bahan_baku')->nullable();
+            $table->integer('harga_pcs')->nullable();
             $table->timestamps();
         });
     }

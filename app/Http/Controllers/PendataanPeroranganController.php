@@ -99,7 +99,7 @@ class PendataanPeroranganController extends Controller
             $inputBiayaProduksi->save();
         }
 
-        return redirect()->route('pendataan.perorangan')->with('success','Pendataan berhasil ditambahkan');
+        return redirect()->back()->with('success','Pendataan berhasil ditambahkan');
 
     }
 

@@ -19,9 +19,9 @@ class CreateProduksiPengolahansTable extends Migration
             $table->string('kecamatan');
             $table->string('bulan');
             $table->string('penyuluh');
-            $table->string('alamat');
-            $table->integer('jenis_olahan');
-            $table->string('produk_olahan');
+            $table->string('alamat')->nullable();
+            $table->integer('jenis_olahan')->nullable();
+            $table->string('produk_olahan')->nullable();
             $table->integer('produksi')->default(0);
             $table->integer('nil_produksi')->default(0);
             $table->string('keterangan')->nullable();

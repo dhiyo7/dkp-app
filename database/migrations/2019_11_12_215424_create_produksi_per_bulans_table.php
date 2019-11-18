@@ -16,8 +16,8 @@ class CreateProduksiPerBulansTable extends Migration
         Schema::create('produksi_per_bulans', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('id_pelaku');
-            $table->string('bahan_baku_utama');
-            $table->integer('nilai_bahan_baku_utama');
+            $table->string('bahan_baku_utama')->nullable();
+            $table->integer('nilai_bahan_baku_utama')->nullable();
             $table->timestamps();
         });
     }

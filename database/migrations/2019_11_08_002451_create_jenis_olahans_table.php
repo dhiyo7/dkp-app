@@ -16,7 +16,7 @@ class CreateJenisOlahansTable extends Migration
         Schema::create('jenis_olahans', function (Blueprint $table) {
             $table->increments('id');
             $table->string('jenis_olahan');
-            $table->string('keterangan');
+            $table->string('keterangan')->nullable();
             $table->timestamps();
         });
     }

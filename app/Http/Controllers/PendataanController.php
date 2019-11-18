@@ -3,8 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\PelakuUsaha;
 use App\Penyuluh;
+use App\AssetPelakuUsaha;
+use App\KomoditasPelakuUsaha;
+use App\PelakuUsaha;
+use App\PengurusPendataan;
+use App\ProduksiPerBulan;
+use App\SumberBahanBaku;
+
 
 class PendataanController extends Controller
 {

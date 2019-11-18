@@ -16,7 +16,7 @@
                             <div class="panel-body">
                                 <div class="col-md-12">
                                         <input type="text" name="name" class="form-control" placeholder="Masukkan Nama" autofocus required><br>
-                                        <input type="number" name="nip" class="form-control" placeholder="Masukkan NIP" required><br>
+                                        <input type="number" name="nip" class="form-control" placeholder="Masukkan NIP"><br>
                                         <select class="form-control" name="kecamatan" required>
                                             <option value="" disabled selected>--- Pilih Kecamatan ---</option>
                                             <option value="Banjarharjo">Banjarharjo</option>
@@ -37,7 +37,7 @@
                                             <option value="Tonjong">Tonjong</option>
                                             <option value="Wanasari">Wanasari</option>
                                         </select><br>
-                                        <textarea type="text" name="desa" class="form-control" placeholder="Masukkan Desa" required></textarea><br>
+                                        <textarea type="text" name="desa" class="form-control" placeholder="Masukkan Desa"></textarea><br>
                                         <textarea type="text" name="keterangan" class="form-control" placeholder="Keterangan"></textarea><br>
                                 </div>
                                 <br>

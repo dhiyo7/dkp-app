@@ -106,7 +106,7 @@ class PendataanKelompokController extends Controller
             $inputBiayaProduksi->save();
         }
 
-        return redirect()->route('pendataan.kelompok')->with('success','Pendataan berhasil ditambahkan');
+        return redirect()->back()->with('success','Pendataan berhasil ditambahkan');
     }
 
 

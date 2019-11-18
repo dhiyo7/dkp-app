@@ -16,10 +16,10 @@ class CreatePenyuluhsTable extends Migration
         Schema::create('penyuluhs', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('nip');
+            $table->string('nip')->nullable();
             $table->string('kecamatan');
-            $table->string('desa');
-            $table->string('keterangan');
+            $table->string('desa')->nullable();
+            $table->string('keterangan')->nullable();
             $table->timestamps();
         });
     }
