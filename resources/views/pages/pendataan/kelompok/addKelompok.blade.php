@@ -16,7 +16,7 @@
                     </div>
                     <div class="panel-body">
                         <div class="col-md-6">
-                            <input type="hidden" name="jenis" class="form-control" value="0">
+                            <input type="hidden" name="jenis" class="form-control" value="kelompok">
                             <input type="text" name="nama_pelaku" class="form-control" placeholder="Masukkan Nama Pelaku Usaha" autofocus>
                             <br>
                             <select class="form-control" name="kategori">

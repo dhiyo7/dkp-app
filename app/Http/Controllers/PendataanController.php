@@ -19,29 +19,29 @@ class PendataanController extends Controller
 
     {
         $k_kub = PelakuUsaha::where([
-            ['jenis', '=', 0],
+            ['jenis', '=', 'kelompok'],
             ['kategori', '=', 'KUB'],])->count();
         $k_poklahsar = PelakuUsaha::where([
-            ['jenis', '=', 0],
+            ['jenis', '=', 'kelompok'],
             ['kategori', '=', 'POKLAHSAR'],])->count();
         $k_pokdakan = PelakuUsaha::where([
-            ['jenis', '=', 0],
+            ['jenis', '=', 'kelompok'],
             ['kategori', '=', 'POKDAKAN'],])->count();
         $k_kugar = PelakuUsaha::where([
-            ['jenis', '=', 0],
+            ['jenis', '=', 'kelompok'],
             ['kategori', '=', 'KUGAR'],])->count();
 
         $p_kub = PelakuUsaha::where([
-            ['jenis', '=', 1],
+            ['jenis', '=', 'perorangan'],
             ['kategori', '=', 'KUB'],])->count();
         $p_poklahsar = PelakuUsaha::where([
-            ['jenis', '=', 1],
+            ['jenis', '=', 'perorangan'],
             ['kategori', '=', 'POKLAHSAR'],])->count();
         $p_pokdakan = PelakuUsaha::where([
-            ['jenis', '=', 1],
+            ['jenis', '=', 'perorangan'],
             ['kategori', '=', 'POKDAKAN'],])->count();
         $p_kugar = PelakuUsaha::where([
-            ['jenis', '=', 1],
+            ['jenis', '=', 'perorangan'],
             ['kategori', '=', 'KUGAR'],])->count();
 
         return view('pages.pendataan.index',

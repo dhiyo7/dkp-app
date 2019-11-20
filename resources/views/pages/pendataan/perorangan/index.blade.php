@@ -27,20 +27,23 @@
                             </thead>
                             <tbody>
 
-                                <tr>
-                                    <td>1</td>
-                                    <td>POKLAHSAR SUMBER IKAN</td>
-                                    <td>RT 007/003 Dukuh Kali Kamal Desa Kedunguter</td>
-                                    <td>2017</td>
-                                    <td>0819-1149-0734</td>
-                                    <td>
-                                        <form action="" method="POST">
-                                            {{-- {{ csrf_field() }} {{ method_field('DELETE') }} --}}
-                                            <button class="btn btn-danger btn-sm" type="submit"><span class="lnr lnr-trash"></<span></button>
-                                        </form>
-                                         <a href="http://" class="btn btn-warning btn-sm"><span class="lnr lnr-pencil"></<span></a>
-                                    </td>
-                                </tr>
+                                @php($no = 1)
+                                @foreach ($perorangans as $perorangan)
+                                    <tr>
+                                        <td>{{$no++}}</td>
+                                        <td>{{$perorangan->nama_pelaku}}</td>
+                                        <td>{{$perorangan->alamat}}</td>
+                                        <td>{{$perorangan->tahun_berdiri}}</td>
+                                        <td>{{$perorangan->no_hp}}</td>
+                                        <td>
+                                            <form action="" method="POST">
+                                                {{-- {{ csrf_field() }} {{ method_field('DELETE') }} --}}
+                                                <button class="btn btn-danger btn-sm" type="submit"><span class="lnr lnr-trash"></<span></button>
+                                            </form>
+                                             <a href="http://" class="btn btn-warning btn-sm"><span class="lnr lnr-pencil"></<span></a>
+                                        </td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>

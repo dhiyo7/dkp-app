@@ -23,9 +23,14 @@ class PendataanKelompokController extends Controller
     public function index()
     {
         $kelompoks = DB::table('pelaku_usahas')
-                    ->where('kategori', '=', 0)
+                    ->where('jenis', '=', 'kelompok')
                     ->get();
+        // $kelompoks = PelakuUsaha::all();
+
         return view('pages.pendataan.kelompok.index', compact('kelompoks'));
+        // return response()->json([
+        //     'data' => $kelompoks,
+        // ]);
     }
 
 

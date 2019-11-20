@@ -10,6 +10,7 @@ use App\PengurusPendataan;
 use App\ProduksiPerBulan;
 use App\SumberBahanBaku;
 use App\Penyuluh;
+use DB;
 
 class PendataanPeroranganController extends Controller
 {
@@ -21,7 +22,10 @@ class PendataanPeroranganController extends Controller
 
     public function index()
     {
-        return view('pages.pendataan.perorangan.index');
+        $perorangans = DB::table('pelaku_usahas')
+                    ->where('jenis', '=', 'perorangan')
+                    ->get();
+        return view('pages.pendataan.perorangan.index', compact('perorangans'));
     }
 
 
