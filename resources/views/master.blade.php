@@ -23,6 +23,7 @@
 	</div>
 
 	@include('layouts.partial._script')
+	@include('layouts.partial.add')
 </body>
 
 </html>

@@ -9,6 +9,8 @@ use App\PelakuUsaha;
 use App\PengurusPendataan;
 use App\ProduksiPerBulan;
 use App\SumberBahanBaku;
+use App\Penyuluh;
+use DB;
 
 class PendataanKelompokController extends Controller
 {
@@ -20,13 +22,17 @@ class PendataanKelompokController extends Controller
 
     public function index()
     {
-        return view('pages.pendataan.kelompok.index');
+        $kelompoks = DB::table('pelaku_usahas')
+                    ->where('kategori', '=', 0)
+                    ->get();
+        return view('pages.pendataan.kelompok.index', compact('kelompoks'));
     }
 
 
     public function create()
     {
-        return view('pages.pendataan.kelompok.addKelompok');
+        $penyuluhs = Penyuluh::all();
+        return view('pages.pendataan.kelompok.addKelompok', compact('penyuluhs'));
     }
 
 

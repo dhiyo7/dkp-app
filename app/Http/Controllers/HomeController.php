@@ -23,8 +23,8 @@ class HomeController extends Controller
         $pengolahan = DB::table('produksi_pengolahans')->count();
         $tambak = DB::table('produksi_tambaks')->count();
         $upr = DB::table('uprs')->count();
-        // $kolam = DB::table('kolams')->count();
+        $pelaku = DB::table('pelaku_usahas')->count();
 
-        return view('pages.beranda', compact('kolam','tambak','lahan','pengolahan','upr','thisTime'));
+        return view('pages.beranda', compact('kolam','tambak','lahan','pengolahan','upr','pelaku','thisTime'));
     }
 }

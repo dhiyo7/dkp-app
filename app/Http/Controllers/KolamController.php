@@ -54,14 +54,13 @@ class KolamController extends Controller
             $kecamatan => 'exists:kecamatan'
         ]);
 
-        
+
 
         $data = DB::table('kolams')
                     ->where([
                     ['bulan', '=', $bulan],
                     ['kecamatan', '=', $kecamatan]
                 ])->get();
-
 
         $pdf = PDF::loadview('pages.kolam.kolamKecamatan', compact('data'))
                             ->setPaper('a4', 'landscape');

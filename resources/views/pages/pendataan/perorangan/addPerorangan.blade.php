@@ -65,7 +65,9 @@
                             <br>
                             <select class="form-control" name="penyuluh">
                                 <option value="" disabled selected>--- Pilih Penyuluh ---</option>
-                                <option value="Januari">Januari</option>
+                                @foreach ($penyuluhs as $penyuluh)
+                                <option value="{{$penyuluh->name}}">{{$penyuluh->name}}</option>
+                                @endforeach
                             </select>
                             <br>
                             <input type="number" name="jml_pekerja" class="form-control" placeholder="Jumlah Pekerja">
@@ -283,3 +285,7 @@
 </form>
 </div>
 @endsection
+
+
+
+

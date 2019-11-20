@@ -28,6 +28,10 @@ class CreateUprsTable extends Migration
             $table->integer('nil_vaname')->default(0)->nullable();
             $table->integer('pro_windu')->default(0)->nullable();
             $table->integer('nil_windu')->default(0)->nullable();
+            $table->integer('pro_nila')->default(0)->nullable();
+            $table->integer('nil_nila')->default(0)->nullable();
+            $table->integer('pro_koi')->default(0)->nullable();
+            $table->integer('nil_koi')->default(0)->nullable();
             $table->timestamps();
         });
     }

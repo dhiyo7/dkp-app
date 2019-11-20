@@ -18,7 +18,7 @@
                         <div class="metric">
                             <span class="icon"><i class="fa fa-list"></i></span>
                             <p>
-                                <span class="number">0</span>
+                                <span class="number">{{$k_kub}}</span>
                                 <span class="title">KUB</span>
                             </p>
                         </div>
@@ -27,7 +27,7 @@
                         <div class="metric">
                             <span class="icon"><i class="fa fa-list"></i></span>
                             <p>
-                                <span class="number">0</span>
+                                <span class="number">{{$k_poklahsar}}</span>
                                 <span class="title">POKLAHSAR</span>
                             </p>
                         </div>
@@ -36,7 +36,7 @@
                         <div class="metric">
                             <span class="icon"><i class="fa fa-list"></i></span>
                             <p>
-                                <span class="number">0</span>
+                                <span class="number">{{$k_pokdakan}}</span>
                                 <span class="title">POKDAKAN</span>
                             </p>
                         </div>
@@ -45,7 +45,7 @@
                         <div class="metric">
                             <span class="icon"><i class="fa fa-list"></i></span>
                             <p>
-                                <span class="number">0</span>
+                                <span class="number">{{$k_kugar}}</span>
                                 <span class="title">KUGAR</span>
                             </p>
                         </div>
@@ -68,7 +68,7 @@
                         <div class="metric">
                             <span class="icon"><i class="fa fa-list"></i></span>
                             <p>
-                                <span class="number">0</span>
+                                <span class="number">{{$p_kub}}</span>
                                 <span class="title">KUB</span>
                             </p>
                         </div>
@@ -77,7 +77,7 @@
                         <div class="metric">
                             <span class="icon"><i class="fa fa-list"></i></span>
                             <p>
-                                <span class="number">0</span>
+                                <span class="number">{{$p_poklahsar}}</span>
                                 <span class="title">POKLAHSAR</span>
                             </p>
                         </div>
@@ -86,7 +86,7 @@
                         <div class="metric">
                             <span class="icon"><i class="fa fa-list"></i></span>
                             <p>
-                                <span class="number">0</span>
+                                <span class="number">{{$p_pokdakan}}</span>
                                 <span class="title">POKDAKAN</span>
                             </p>
                         </div>
@@ -95,7 +95,7 @@
                         <div class="metric">
                             <span class="icon"><i class="fa fa-list"></i></span>
                             <p>
-                                <span class="number">0</span>
+                                <span class="number">{{$p_kugar}}</span>
                                 <span class="title">KUGAR</span>
                             </p>
                         </div>

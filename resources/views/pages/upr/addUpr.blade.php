@@ -65,6 +65,10 @@
                             <br>
                             <input type="number" name="nil_lele" class="form-control" placeholder="Masukkan Nilai Produksi Lele">
                             <br>
+                            <input type="number" name="pro_nila" class="form-control" placeholder="Masukkan Produksi Nila">
+                            <br>
+                            <input type="number" name="nil_nila" class="form-control" placeholder="Masukkan Nilai Produksi Nila">
+                            <br>
                         </div>
                         <div class="col-md-6">
                             <input type="number" name="pro_bandeng" class="form-control" placeholder="Masukkan Produksi Bandeng">
@@ -78,6 +82,10 @@
                             <input type="number" name="pro_windu" class="form-control" placeholder="Masukkan Produksi Windu">
                             <br>
                             <input type="number" name="nil_windu" class="form-control" placeholder="Masukkan Nilai Produksi Windu">
+                            <br>
+                            <input type="number" name="pro_koi" class="form-control" placeholder="Masukkan Produksi Koi">
+                            <br>
+                            <input type="number" name="nil_koi" class="form-control" placeholder="Masukkan Nilai Produksi Koi">
                             <br>
                         </div>
                         <br>

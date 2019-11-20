@@ -62,7 +62,7 @@
                         <div class="metric">
                             <span class="icon"><i class="fa fa-users"></i></span>
                             <p>
-                                <span class="number">{{$kolam}}</span>
+                                <span class="number">{{$pelaku}}</span>
                                 <span class="title">Pelaku Usaha</span>
                             </p>
                         </div>

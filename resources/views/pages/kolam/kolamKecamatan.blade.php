@@ -24,42 +24,91 @@
         <table class="table table-bordered">
             <thead class="thead-dark">
                 <tr>
-                    <td style="text-align: center;" rowspan="2">No</td>
-                    <td style="text-align: center;" colspan="2" rowspan="2">Desa</td>
-                    <td style="text-align: center;" colspan="2">Lele</td>
-                    <td style="text-align: center;" colspan="2">Nila</td>
-                    <td style="text-align: center;" colspan="2">Kaper Mas</td>
-                    <td style="text-align: center;" colspan="2">Nilem</td>
-                    <td style="text-align: center;" colspan="2">Gurame</td>
+                        <td style="text-align: center; font-size:10px" rowspan="2">No</td>
+                        <td style="text-align: center; font-size:10px" colspan="2" rowspan="2">Desa</td>
+                        <td style="text-align: center; font-size:10px" colspan="2">Lele</td>
+                        <td style="text-align: center; font-size:10px" colspan="2">Nila</td>
+                        <td style="text-align: center; font-size:10px" colspan="2">Kaper Mas</td>
+                        <td style="text-align: center; font-size:10px" colspan="2">Nilem</td>
+                        <td style="text-align: center; font-size:10px" colspan="2">Gurameh</td>
+                        <td style="text-align: center; font-size:10px" colspan="2">Tawes</td>
+                        <td style="text-align: center; font-size:10px" colspan="2">Mujair</td>
+                        <td style="text-align: center; font-size:10px" colspan="2">Bawal</td>
+                        <td style="text-align: center; font-size:10px" colspan="2">Belut</td>
+                        <td style="text-align: center; font-size:10px" colspan="2">Udang Galah</td>
+                        <td style="text-align: center; font-size:10px" colspan="2">Tambakan</td>
+                        <td style="text-align: center; font-size:10px" colspan="2">Patin</td>
+                        <td style="text-align: center; font-size:10px" colspan="2">Jumlah</td>
                 </tr>
                 <tr>
-                    <td>Produski (Kg)</td>
-                    <td>Nilai (Rp)</td>
-                    <td>Produski (Kg)</td>
-                    <td>Nilai (Rp)</td>
-                    <td>Produski (Kg)</td>
-                    <td>Nilai (Rp)</td>
-                    <td>Produski (Kg)</td>
-                    <td>Nilai (Rp)</td>
-                    <td>Produski (Kg)</td>
-                    <td>Nilai (Rp)</td>
+                        <td style="text-align: center; font-size:10px">Produski (Kg)</td>
+                        <td style="text-align: center; font-size:10px">Nilai (Rp)</td>
+                        <td style="text-align: center; font-size:10px">Produski (Kg)</td>
+                        <td style="text-align: center; font-size:10px">Nilai (Rp)</td>
+                        <td style="text-align: center; font-size:10px">Produski (Kg)</td>
+                        <td style="text-align: center; font-size:10px">Nilai (Rp)</td>
+                        <td style="text-align: center; font-size:10px">Produski (Kg)</td>
+                        <td style="text-align: center; font-size:10px">Nilai (Rp)</td>
+                        <td style="text-align: center; font-size:10px">Produski (Kg)</td>
+                        <td style="text-align: center; font-size:10px">Nilai (Rp)</td>
+                        <td style="text-align: center; font-size:10px">Produski (Kg)</td>
+                        <td style="text-align: center; font-size:10px">Nilai (Rp)</td>
+                        <td style="text-align: center; font-size:10px">Produski (Kg)</td>
+                        <td style="text-align: center; font-size:10px">Nilai (Rp)</td>
+                        <td style="text-align: center; font-size:10px">Produski (Kg)</td>
+                        <td style="text-align: center; font-size:10px">Nilai (Rp)</td>
+                        <td style="text-align: center; font-size:10px">Produski (Kg)</td>
+                        <td style="text-align: center; font-size:10px">Nilai (Rp)</td>
+                        <td style="text-align: center; font-size:10px">Produski (Kg)</td>
+                        <td style="text-align: center; font-size:10px">Nilai (Rp)</td>
+                        <td style="text-align: center; font-size:10px">Produski (Kg)</td>
+                        <td style="text-align: center; font-size:10px">Nilai (Rp)</td>
+                        <td style="text-align: center; font-size:10px">Produski (Kg)</td>
+                        <td style="text-align: center; font-size:10px">Nilai (Rp)</td>
+                        <td style="text-align: center; font-size:10px">Produski (Kg)</td>
+                        <td style="text-align: center; font-size:10px">Nilai (Rp)</td>
                 </tr>
             </thead>
             <tbody>
                 @php($no = 1) @foreach ($data as $dat)
+                @php($jml_produksi = $dat->pro_lele+$dat->pro_nila+$dat->pro_kaper+
+                    $dat->pro_nilem+$dat->pro_gurame+$dat->pro_tawes+$dat->pro_mujair+
+                    $dat->pro_bawal+$dat->pro_belut+$dat->pro_udang_galah+
+                    $dat->pro_tambakan+$dat->pro_patin)
+
+                @php($nil_produksi = $dat->nil_lele+$dat->nil_nila+$dat->nil_kaper+
+                    $dat->nil_nilem+$dat->nil_gurame+$dat->nil_tawes+$dat->nil_mujair+
+                    $dat->nil_bawal+$dat->nil_belut+$dat->nil_udang_galah+
+                    $dat->nil_tambakan+$dat->nil_patin)
                 <tr>
-                    <td>{{$no++}}</td>
-                    <td colspan="2">{{$dat->desa}}</td>
-                    <td>{{$dat->pro_lele}}</td>
-                    <td>{{$dat->nil_lele}}</td>
-                    <td>{{$dat->pro_nila}}</td>
-                    <td>{{$dat->nil_nila}}</td>
-                    <td>{{$dat->pro_kaper}}</td>
-                    <td>{{$dat->nil_kaper}}</td>
-                    <td>{{$dat->pro_nilem}}</td>
-                    <td>{{$dat->nil_nilem}}</td>
-                    <td>{{$dat->pro_gurame}}</td>
-                    <td>{{$dat->nil_gurame}}</td>
+                        <td style="text-align: center; font-size:10px">{{$no++}}</td>
+                        <td style="text-align: center; font-size:10px" colspan="2">{{$dat->desa}}</td>
+                        <td style="text-align: center; font-size:10px">{{$dat->pro_lele}}</td>
+                        <td style="text-align: center; font-size:10px">{{$dat->nil_lele}}</td>
+                        <td style="text-align: center; font-size:10px">{{$dat->pro_nila}}</td>
+                        <td style="text-align: center; font-size:10px">{{$dat->nil_nila}}</td>
+                        <td style="text-align: center; font-size:10px">{{$dat->pro_kaper}}</td>
+                        <td style="text-align: center; font-size:10px">{{$dat->nil_kaper}}</td>
+                        <td style="text-align: center; font-size:10px">{{$dat->pro_nilem}}</td>
+                        <td style="text-align: center; font-size:10px">{{$dat->nil_nilem}}</td>
+                        <td style="text-align: center; font-size:10px">{{$dat->pro_gurame}}</td>
+                        <td style="text-align: center; font-size:10px">{{$dat->nil_gurame}}</td>
+                        <td style="text-align: center; font-size:10px">{{$dat->pro_tawes}}</td>
+                        <td style="text-align: center; font-size:10px">{{$dat->nil_tawes}}</td>
+                        <td style="text-align: center; font-size:10px">{{$dat->pro_mujair}}</td>
+                        <td style="text-align: center; font-size:10px">{{$dat->nil_mujair}}</td>
+                        <td style="text-align: center; font-size:10px">{{$dat->pro_bawal}}</td>
+                        <td style="text-align: center; font-size:10px">{{$dat->nil_bawal}}</td>
+                        <td style="text-align: center; font-size:10px">{{$dat->pro_belut}}</td>
+                        <td style="text-align: center; font-size:10px">{{$dat->nil_belut}}</td>
+                        <td style="text-align: center; font-size:10px">{{$dat->pro_udang_galah}}</td>
+                        <td style="text-align: center; font-size:10px">{{$dat->nil_udang_galah}}</td>
+                        <td style="text-align: center; font-size:10px">{{$dat->pro_tambakan}}</td>
+                        <td style="text-align: center; font-size:10px">{{$dat->nil_tambakan}}</td>
+                        <td style="text-align: center; font-size:10px">{{$dat->pro_patin}}</td>
+                        <td style="text-align: center; font-size:10px">{{$dat->nil_patin}}</td>
+                        <td style="text-align: center; font-size:10px">{{$jml_produksi}}</td>
+                        <td style="text-align: center; font-size:10px">{{$nil_produksi}}</td>
                 </tr>
                 @endforeach
             </tbody>

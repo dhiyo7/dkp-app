@@ -3,6 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\AssetPelakuUsaha;
+use App\KomoditasPelakuUsaha;
+use App\PelakuUsaha;
+use App\PengurusPendataan;
+use App\ProduksiPerBulan;
+use App\SumberBahanBaku;
+use App\Penyuluh;
 
 class PendataanPeroranganController extends Controller
 {
@@ -20,7 +27,8 @@ class PendataanPeroranganController extends Controller
 
     public function create()
     {
-        return view('pages.pendataan.perorangan.addPerorangan');
+        $penyuluhs = Penyuluh::all();
+        return view('pages.pendataan.perorangan.addPerorangan', compact('penyuluhs'));
     }
 
     public function store(Request $request)

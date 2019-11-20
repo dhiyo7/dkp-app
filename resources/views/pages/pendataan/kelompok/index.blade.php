@@ -31,13 +31,14 @@
                                 </tr>
                             </thead>
                             <tbody>
-
+                                @php($no = 1)
+                                @foreach ($kelompoks as $kelompok)
                                 <tr>
-                                    <td>1</td>
-                                    <td>POKLAHSAR SUMBER IKAN</td>
-                                    <td>RT 007/003 Dukuh Kali Kamal Desa Kedunguter</td>
-                                    <td>2017</td>
-                                    <td>0819-1149-0734</td>
+                                    <td>{{$no++}}</td>
+                                    <td>{{$kelompok->nama_pelaku}}</td>
+                                    <td>{{$kelompok->alamat}}</td>
+                                    <td>{{$kelompok->tahun_berdiri}}</td>
+                                    <td>{{$kelompok->no_hp}}</td>
                                     <td>
                                         <form action="" method="POST">
                                             {{-- {{ csrf_field() }} {{ method_field('DELETE') }} --}}
@@ -46,6 +47,8 @@
                                          <a href="http://" class="btn btn-warning btn-sm"><span class="lnr lnr-pencil"></<span></a>
                                     </td>
                                 </tr>
+                                @endforeach
+
                             </tbody>
                         </table>
                     </div>
