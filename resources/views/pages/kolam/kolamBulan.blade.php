@@ -20,8 +20,8 @@
     {{-- <p class="text-sm-left">Kecamatan : {{$data[0]->kecamatan}}</p> --}}
     {{-- <p class="text-sm-left">Wilayah Kerja : {{$data[0]->wilayah}}</p> --}}
     <p class="text-sm-left">Bulan : {{$data[0]->bulan}}</p>
-    <div class="table-responsive">
-        <table class="table table-bordered" style="table-layout:fixed;">
+    <div class="table-responsive" style="page-break-after: always; page-break-inside:avoid;">
+        <table  class="table table-bordered">
             <thead class="thead-dark">
                 <tr>
                     <td style="text-align: center;" rowspan="2">No</td>
@@ -107,8 +107,8 @@
                     <td>{{$dat->nil_belut}}</td>
                     <td>{{$dat->pro_udang_galah}}</td>
                     <td>{{$dat->nil_udang_galah}}</td>
-                    <td>{{$dat->pro_tabakan}}</td>
-                    <td>{{$dat->nil_tabakan}}</td>
+                    <td>{{$dat->pro_tambakan}}</td>
+                    <td>{{$dat->nil_tambakan}}</td>
                     <td>{{$dat->pro_patin}}</td>
                     <td>{{$dat->nil_patin}}</td>
                     <td>{{$jml_produksi}}</td>
