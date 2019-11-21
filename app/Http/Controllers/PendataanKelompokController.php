@@ -25,9 +25,20 @@ class PendataanKelompokController extends Controller
         $kelompoks = DB::table('pelaku_usahas')
                     ->where('jenis', '=', 'kelompok')
                     ->get();
-        // $kelompoks = PelakuUsaha::all();
+
 
         return view('pages.pendataan.kelompok.index', compact('kelompoks'));
+
+        // $kelompoks = DB::table('pelaku_usahas')
+        //             ->join('komoditas_pelaku_usahas', 'pelaku_usahas.id', '=', 'komoditas_pelaku_usahas.id_pelaku')
+        //             ->join('asset_pelaku_usahas', 'pelaku_usahas.id', '=', 'asset_pelaku_usahas.id_pelaku')
+        //             ->join('pengurus_pendataans', 'pelaku_usahas.id', '=', 'pengurus_pendataans.id_pelaku')
+        //             ->join('sumber_bahan_bakus', 'pelaku_usahas.id', '=', 'sumber_bahan_bakus.id_pelaku')
+        //             ->join('produksi_per_bulans', 'pelaku_usahas.id', '=', 'produksi_per_bulans.id_pelaku')
+        //             ->select('pelaku_usahas.*', 'komoditas_pelaku_usahas.*', 'asset_pelaku_usahas.*',
+        //                     'pengurus_pendataans.*', 'sumber_bahan_bakus.*', 'produksi_per_bulans.*')
+        //             ->get();
+
         // return response()->json([
         //     'data' => $kelompoks,
         // ]);
