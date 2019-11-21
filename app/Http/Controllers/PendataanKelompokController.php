@@ -38,9 +38,11 @@ class PendataanKelompokController extends Controller
         //             ->select('pelaku_usahas.*', 'komoditas_pelaku_usahas.*', 'asset_pelaku_usahas.*',
         //                     'pengurus_pendataans.*', 'sumber_bahan_bakus.*', 'produksi_per_bulans.*')
         //             ->get();
-
         // return response()->json([
-        //     'data' => $kelompoks,
+        //     'data' => [
+        //         'id' => $kelompoks->id,
+        //         'komoditas' => $results
+        //     ]
         // ]);
     }
 
