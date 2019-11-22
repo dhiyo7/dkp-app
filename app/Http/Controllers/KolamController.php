@@ -7,6 +7,8 @@ use App\Penyuluh;
 use App\Kolam;
 use DB;
 use PDF;
+use Excel;
+use App\Exports\KolamExport;
 
 class KolamController extends Controller
 {
@@ -75,5 +77,28 @@ class KolamController extends Controller
 
         $pdf = PDF::loadview('pages.kolam.kolamBulan', compact('data'))->setPaper('a4', 'landscape');
         return $pdf->download('Data Bulan Pada Bulan '.$bulan.'.pdf');
+    }
+
+    public function excelKecamatan(Request $request){
+        // return (new KolamExport)->download('users.xlsx');
+        $bulan = $request->bulan;
+        $kecamatan = $request->kecamatan;
+
+        $this->validate($request,[
+            $bulan => 'exists:bulan',
+            $kecamatan => 'exists:kecamatan'
+        ]);
+
+
+
+        $data = DB::table('kolams')
+                    ->where([
+                    ['bulan', '=', $bulan],
+                    ['kecamatan', '=', $kecamatan]
+                ])->get();
+
+        // return view('pages.kolam.kolamKecamatan', compact('data'));
+
+        return Excel::download(new KolamExport(compact('data')), 'kolam.xlsx');
     }
 }

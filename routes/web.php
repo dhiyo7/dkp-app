@@ -15,6 +15,7 @@ Route::prefix('kolam')->group(function(){
     Route::delete('/{id}/delete', 'KolamController@destroy')->name('kolam.delete');
     Route::get('/cetak_kecamatan', 'KolamController@cetak_kecamatan')->name('kolam.pdf.kecamatan');
     Route::get('/cetak_bulan', 'KolamController@cetak_bulan')->name('kolam.pdf.bulan');
+    Route::get('/kecamatan_export', 'KolamController@excelKecamatan')->name('kolam.excel.kecamatan');
 });
 
 Route::prefix('penyuluh')->group(function(){
